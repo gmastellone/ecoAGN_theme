@@ -32,11 +32,30 @@
   position: absolute !important;
   left: 50% !important;
   transform: translateX(-50%) !important;
+  white-space: nowrap !important;
+}
+
+.header__inline-menu .list-menu {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  justify-content: center !important;
+  gap: 2rem !important;
 }
 
 .header__inline-menu .list-menu__item {
   text-transform: uppercase !important;
   letter-spacing: 0.1em !important;
+  white-space: nowrap !important;
+}
+
+@media screen and (max-width: 989px) {
+  .header__inline-menu {
+    display: none !important;
+  }
+  
+  .header__icons {
+    margin-left: auto !important;
+  }
 }
 
 .header__logo {

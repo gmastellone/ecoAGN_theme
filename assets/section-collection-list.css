@@ -33,7 +33,7 @@
 
 .card__heading .icon-wrap.hidden,
 .card__caption .icon-wrap.hidden {
-  display: none;
+  display: none !important;
 }
 
 @media screen and (max-width: 749px) {

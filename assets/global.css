@@ -39,7 +39,7 @@
   display: flex !important;
   flex-wrap: nowrap !important;
   justify-content: center !important;
-  gap: 2rem !important;
+  gap: 1rem !important;
 }
 
 .header__inline-menu .list-menu__item {

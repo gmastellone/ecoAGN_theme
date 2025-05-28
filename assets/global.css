@@ -29,10 +29,17 @@
 
 .header__inline-menu {
   margin-left: 0 !important;
+  position: absolute !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
 }
 
 .header__logo {
   margin-left: 0 !important;
+}
+
+.header__icons {
+  margin-left: auto !important;
 }
 
 /* Slideshow adjustments */

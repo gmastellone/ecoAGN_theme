@@ -1,0 +1,177 @@
+{{ 'section-product-description.css' | asset_url | stylesheet_tag }}
+
+<div class="color-{{ section.settings.color_scheme }} gradient">
+  <div
+    class="product-description page-width section-{{ section.id }}-padding"
+    style="--padding-top: {{ section.settings.padding_top }}px; --padding-bottom: {{ section.settings.padding_bottom }}px;"
+  >
+    <div class="product-description__content{% if section.settings.full_width %} product-description__content--full-width{% endif %}">
+      {%- if section.settings.title != blank -%}
+        <h2 class="product-description__title {{ section.settings.heading_size }}{% if section.settings.uppercase_title %} text-uppercase{% endif %}{% if section.settings.font_family == 'secondary' %} font-secondary{% endif %}">
+          {{ section.settings.title | escape }}
+        </h2>
+      {%- endif -%}
+
+      <div class="product-description__text{% if section.settings.uppercase_text %} text-uppercase{% endif %}{% if section.settings.font_family == 'secondary' %} font-secondary{% endif %}">
+        {{ section.settings.description }}
+      </div>
+
+      {%- if section.settings.show_button and section.settings.button_label != blank -%}
+        <div class="product-description__button-wrapper">
+          <a
+            href="{{ section.settings.button_link }}"
+            class="button{% if section.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"
+          >
+            {{ section.settings.button_label | escape }}
+          </a>
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Product Description",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Product Description"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "h2",
+          "label": "Small"
+        },
+        {
+          "value": "h1",
+          "label": "Medium"
+        },
+        {
+          "value": "h0",
+          "label": "Large"
+        }
+      ],
+      "default": "h1",
+      "label": "Heading size"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description",
+      "default": "<p>Share information about your product.</p>"
+    },
+    {
+      "type": "select",
+      "id": "font_family",
+      "options": [
+        {
+          "value": "primary",
+          "label": "Primary font"
+        },
+        {
+          "value": "secondary",
+          "label": "Secondary font"
+        }
+      ],
+      "default": "primary",
+      "label": "Font family"
+    },
+    {
+      "type": "checkbox",
+      "id": "uppercase_title",
+      "default": false,
+      "label": "Uppercase title"
+    },
+    {
+      "type": "checkbox",
+      "id": "uppercase_text",
+      "default": false,
+      "label": "Uppercase description"
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "default": false,
+      "label": "Full width"
+    },
+    {
+      "type": "header",
+      "content": "Button"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_button",
+      "default": false,
+      "label": "Show button"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button label",
+      "default": "Button label"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    },
+    {
+      "type": "checkbox",
+      "id": "button_style_secondary",
+      "default": false,
+      "label": "Use secondary button style"
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "Section Padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding bottom",
+      "default": 36
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product Description",
+      "settings": {
+        "title": "Product Description",
+        "description": "<p>Share information about your product.</p>"
+      }
+    }
+  ]
+}
+{% endschema %}

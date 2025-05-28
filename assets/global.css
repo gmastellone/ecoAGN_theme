@@ -3,7 +3,6 @@
   max-width: 1400px !important;
   padding-left: 5rem !important;
   padding-right: 5rem !important;
-  margin: 0 auto !important;
 }
 
 @media screen and (min-width: 750px) {
@@ -38,9 +37,8 @@
 
 /* Slideshow adjustments */
 .slideshow__text-wrapper {
-  max-width: 1400px !important;
+  max-width: 100% !important;
   padding: 0 5rem !important;
-  margin: 0 auto !important;
 }
 
 @media screen and (min-width: 750px) {
@@ -67,34 +65,32 @@
 
 /* Collection list adjustments */
 .collection-list {
-  max-width: 1400px !important;
-  margin: 0 auto !important;
-  padding: 0 5rem !important;
+  margin-left: -5rem !important;
+  margin-right: -5rem !important;
 }
 
 @media screen and (min-width: 750px) {
   .collection-list {
-    padding: 0 7rem !important;
+    margin-left: -7rem !important;
+    margin-right: -7rem !important;
   }
 }
 
 /* Product grid adjustments */
 .product-grid {
-  max-width: 1400px !important;
-  margin: 0 auto !important;
-  padding: 0 5rem !important;
+  margin-left: -5rem !important;
+  margin-right: -5rem !important;
 }
 
 @media screen and (min-width: 750px) {
   .product-grid {
-    padding: 0 7rem !important;
+    margin-left: -7rem !important;
+    margin-right: -7rem !important;
   }
 }
 
 /* Footer adjustments */
 .footer {
-  max-width: 1400px !important;
-  margin: 0 auto !important;
   padding-left: 5rem !important;
   padding-right: 5rem !important;
 }
@@ -108,8 +104,6 @@
 
 /* General section adjustments */
 .section {
-  max-width: 1400px !important;
-  margin: 0 auto !important;
   padding-left: 5rem !important;
   padding-right: 5rem !important;
 }
@@ -124,7 +118,6 @@
 /* Container adjustments */
 .container {
   max-width: 1400px !important;
-  margin: 0 auto !important;
   padding-left: 5rem !important;
   padding-right: 5rem !important;
 }
@@ -138,34 +131,30 @@
 
 /* Grid adjustments */
 .grid {
-  max-width: 1400px !important;
-  margin: 0 auto !important;
-  padding: 0 5rem !important;
+  margin-left: -5rem !important;
+  margin-right: -5rem !important;
 }
 
 @media screen and (min-width: 750px) {
   .grid {
-    padding: 0 7rem !important;
+    margin-left: -7rem !important;
+    margin-right: -7rem !important;
   }
 }
 
 /* Card adjustments */
 .card {
-  max-width: 1400px !important;
-  margin: 0 auto !important;
-  padding: 0 5rem !important;
+  margin: 0 5rem !important;
 }
 
 @media screen and (min-width: 750px) {
   .card {
-    padding: 0 7rem !important;
+    margin: 0 7rem !important;
   }
 }
 
 /* Remove unnecessary padding from sections */
 .section-padding {
-  max-width: 1400px !important;
-  margin: 0 auto !important;
   padding-left: 5rem !important;
   padding-right: 5rem !important;
 }
@@ -181,15 +170,6 @@
 .content-container {
   max-width: 1400px !important;
   margin: 0 auto !important;
-  padding-left: 5rem !important;
-  padding-right: 5rem !important;
-}
-
-@media screen and (min-width: 750px) {
-  .content-container {
-    padding-left: 7rem !important;
-    padding-right: 7rem !important;
-  }
 }
 
 /* Make images and media full width */

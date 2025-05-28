@@ -101,7 +101,7 @@
                   {{ 'onboarding.collection_title' | t }}
                 {%- endif -%}
                 {%- if show_arrow and card_collection.featured_image or card_collection.description == blank -%}
-                  <span class="icon-wrap">
+                  <span class="icon-wrap{% unless show_arrow %} hidden{% endunless %}">
                     {{- 'icon-arrow.svg' | inline_asset_content -}}
                   </span>
                 {%- endif %}
@@ -111,7 +111,7 @@
               <p class="card__caption{% if uppercase_text %} text-uppercase{% endif %}{% if font_family == 'secondary' %} font-secondary{% endif %}">
                 {{- card_collection.description | strip_html | truncatewords: 12 -}}
                 {%- if show_arrow -%}
-                  <span class="icon-wrap">
+                  <span class="icon-wrap{% unless show_arrow %} hidden{% endunless %}">
                     {{- 'icon-arrow.svg' | inline_asset_content -}}
                   </span>
                 {%- endif -%}
@@ -139,7 +139,7 @@
                 {{ 'onboarding.collection_title' | t }}
               {%- endif -%}
               {%- if show_arrow and card_collection.featured_image or card_collection.description == blank -%}
-                <span class="icon-wrap">
+                <span class="icon-wrap{% unless show_arrow %} hidden{% endunless %}">
                   {{- 'icon-arrow.svg' | inline_asset_content -}}
                 </span>
               {%- endif %}
@@ -149,7 +149,7 @@
             <p class="card__caption{% if uppercase_text %} text-uppercase{% endif %}{% if font_family == 'secondary' %} font-secondary{% endif %}">
               {{- card_collection.description | strip_html | truncatewords: 12 -}}
               {%- if show_arrow -%}
-                <span class="icon-wrap">
+                <span class="icon-wrap{% unless show_arrow %} hidden{% endunless %}">
                   {{- 'icon-arrow.svg' | inline_asset_content -}}
                 </span>
               {%- endif -%}
@@ -164,7 +164,7 @@
           <h3 class="card__heading card__heading--placeholder">
             <a role="link" aria-disabled="true" class="full-unstyled-link">
               {{ 'onboarding.collection_title' | t }}
-              <span class="icon-wrap">
+              <span class="icon-wrap{% unless show_arrow %} hidden{% endunless %}">
                 {{- 'icon-arrow.svg' | inline_asset_content -}}
               </span>
             </a>

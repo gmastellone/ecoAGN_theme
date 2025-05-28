@@ -1,0 +1,145 @@
+/* Global layout adjustments */
+.page-width {
+  max-width: 1600px !important;
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+}
+
+@media screen and (min-width: 750px) {
+  .page-width {
+    padding-left: 4rem !important;
+    padding-right: 4rem !important;
+  }
+}
+
+/* Header adjustments */
+.header {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.header__inline-menu {
+  margin-left: 0 !important;
+}
+
+.header__logo {
+  margin-left: 0 !important;
+}
+
+/* Slideshow adjustments */
+.slideshow__text-wrapper {
+  max-width: 100% !important;
+  padding: 0 2rem !important;
+}
+
+@media screen and (min-width: 750px) {
+  .slideshow__text-wrapper {
+    padding: 0 4rem !important;
+  }
+}
+
+/* Collection list adjustments */
+.collection-list {
+  margin-left: -2rem !important;
+  margin-right: -2rem !important;
+}
+
+@media screen and (min-width: 750px) {
+  .collection-list {
+    margin-left: -4rem !important;
+    margin-right: -4rem !important;
+  }
+}
+
+/* Product grid adjustments */
+.product-grid {
+  margin-left: -2rem !important;
+  margin-right: -2rem !important;
+}
+
+@media screen and (min-width: 750px) {
+  .product-grid {
+    margin-left: -4rem !important;
+    margin-right: -4rem !important;
+  }
+}
+
+/* Footer adjustments */
+.footer {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* General section adjustments */
+.section {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* Container adjustments */
+.container {
+  max-width: 1600px !important;
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+}
+
+@media screen and (min-width: 750px) {
+  .container {
+    padding-left: 4rem !important;
+    padding-right: 4rem !important;
+  }
+}
+
+/* Grid adjustments */
+.grid {
+  margin-left: -2rem !important;
+  margin-right: -2rem !important;
+}
+
+@media screen and (min-width: 750px) {
+  .grid {
+    margin-left: -4rem !important;
+    margin-right: -4rem !important;
+  }
+}
+
+/* Card adjustments */
+.card {
+  margin: 0 2rem !important;
+}
+
+@media screen and (min-width: 750px) {
+  .card {
+    margin: 0 4rem !important;
+  }
+}
+
+/* Remove unnecessary padding from sections */
+.section-padding {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* Adjust content width for better readability */
+.content-container {
+  max-width: 1600px !important;
+  margin: 0 auto !important;
+}
+
+/* Make images and media full width */
+.media {
+  width: 100% !important;
+}
+
+/* Adjust spacing for better visual hierarchy */
+.section-spacing {
+  margin-top: 2rem !important;
+  margin-bottom: 2rem !important;
+}
+
+@media screen and (min-width: 750px) {
+  .section-spacing {
+    margin-top: 4rem !important;
+    margin-bottom: 4rem !important;
+  }
+} 

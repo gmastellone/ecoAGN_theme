@@ -1,21 +1,28 @@
 /* Global layout adjustments */
 .page-width {
-  max-width: 1600px !important;
-  padding-left: 2rem !important;
-  padding-right: 2rem !important;
+  max-width: 1400px !important;
+  padding-left: 3rem !important;
+  padding-right: 3rem !important;
 }
 
 @media screen and (min-width: 750px) {
   .page-width {
-    padding-left: 4rem !important;
-    padding-right: 4rem !important;
+    padding-left: 5rem !important;
+    padding-right: 5rem !important;
   }
 }
 
 /* Header adjustments */
 .header {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
+  padding-left: 3rem !important;
+  padding-right: 3rem !important;
+}
+
+@media screen and (min-width: 750px) {
+  .header {
+    padding-left: 5rem !important;
+    padding-right: 5rem !important;
+  }
 }
 
 .header__inline-menu {
@@ -29,100 +36,133 @@
 /* Slideshow adjustments */
 .slideshow__text-wrapper {
   max-width: 100% !important;
-  padding: 0 2rem !important;
+  padding: 0 3rem !important;
 }
 
 @media screen and (min-width: 750px) {
   .slideshow__text-wrapper {
-    padding: 0 4rem !important;
+    padding: 0 5rem !important;
   }
+}
+
+.slideshow__text-wrapper .slideshow__text {
+  max-width: 600px !important;
+}
+
+.slideshow__text-wrapper .slideshow__text--left {
+  margin-left: 0 !important;
+}
+
+.slideshow__text-wrapper .slideshow__text--right {
+  margin-right: 0 !important;
 }
 
 /* Collection list adjustments */
 .collection-list {
-  margin-left: -2rem !important;
-  margin-right: -2rem !important;
+  margin-left: -3rem !important;
+  margin-right: -3rem !important;
 }
 
 @media screen and (min-width: 750px) {
   .collection-list {
-    margin-left: -4rem !important;
-    margin-right: -4rem !important;
+    margin-left: -5rem !important;
+    margin-right: -5rem !important;
   }
 }
 
 /* Product grid adjustments */
 .product-grid {
-  margin-left: -2rem !important;
-  margin-right: -2rem !important;
+  margin-left: -3rem !important;
+  margin-right: -3rem !important;
 }
 
 @media screen and (min-width: 750px) {
   .product-grid {
-    margin-left: -4rem !important;
-    margin-right: -4rem !important;
+    margin-left: -5rem !important;
+    margin-right: -5rem !important;
   }
 }
 
 /* Footer adjustments */
 .footer {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
+  padding-left: 3rem !important;
+  padding-right: 3rem !important;
+}
+
+@media screen and (min-width: 750px) {
+  .footer {
+    padding-left: 5rem !important;
+    padding-right: 5rem !important;
+  }
 }
 
 /* General section adjustments */
 .section {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
+  padding-left: 3rem !important;
+  padding-right: 3rem !important;
+}
+
+@media screen and (min-width: 750px) {
+  .section {
+    padding-left: 5rem !important;
+    padding-right: 5rem !important;
+  }
 }
 
 /* Container adjustments */
 .container {
-  max-width: 1600px !important;
-  padding-left: 2rem !important;
-  padding-right: 2rem !important;
+  max-width: 1400px !important;
+  padding-left: 3rem !important;
+  padding-right: 3rem !important;
 }
 
 @media screen and (min-width: 750px) {
   .container {
-    padding-left: 4rem !important;
-    padding-right: 4rem !important;
+    padding-left: 5rem !important;
+    padding-right: 5rem !important;
   }
 }
 
 /* Grid adjustments */
 .grid {
-  margin-left: -2rem !important;
-  margin-right: -2rem !important;
+  margin-left: -3rem !important;
+  margin-right: -3rem !important;
 }
 
 @media screen and (min-width: 750px) {
   .grid {
-    margin-left: -4rem !important;
-    margin-right: -4rem !important;
+    margin-left: -5rem !important;
+    margin-right: -5rem !important;
   }
 }
 
 /* Card adjustments */
 .card {
-  margin: 0 2rem !important;
+  margin: 0 3rem !important;
 }
 
 @media screen and (min-width: 750px) {
   .card {
-    margin: 0 4rem !important;
+    margin: 0 5rem !important;
   }
 }
 
 /* Remove unnecessary padding from sections */
 .section-padding {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
+  padding-left: 3rem !important;
+  padding-right: 3rem !important;
+}
+
+@media screen and (min-width: 750px) {
+  .section-padding {
+    padding-left: 5rem !important;
+    padding-right: 5rem !important;
+  }
 }
 
 /* Adjust content width for better readability */
 .content-container {
-  max-width: 1600px !important;
+  max-width: 1400px !important;
   margin: 0 auto !important;
 }
 

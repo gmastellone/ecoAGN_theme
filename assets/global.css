@@ -43,7 +43,6 @@
 }
 
 .header__inline-menu .list-menu__item {
-  text-transform: uppercase !important;
   letter-spacing: 0.1em !important;
   white-space: nowrap !important;
 }
@@ -67,12 +66,10 @@
 }
 
 .header__icons .header__icon {
-  text-transform: uppercase !important;
   letter-spacing: 0.1em !important;
 }
 
 .header__icons .header__icon-text {
-  text-transform: uppercase !important;
   letter-spacing: 0.1em !important;
 }
 

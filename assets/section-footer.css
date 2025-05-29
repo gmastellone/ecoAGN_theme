@@ -43,6 +43,7 @@
     row-gap: 1.5rem;
     justify-content: center;
     padding: 0 2.5rem;
+    width: 100%;
   }
 
   .footer-block.footer-block--menu:only-child {
@@ -51,6 +52,8 @@
 
   .footer-block__details-content {
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .footer__localization:empty + .footer__column {
@@ -58,14 +61,17 @@
     text-align: center;
   }
 
-  .footer__column--info {
-    align-items: center;
-    text-align: center;
+  .footer__column {
+    align-items: center !important;
+    text-align: center !important;
+    width: 100%;
   }
 
   .footer-block.grid__item {
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
+    width: 100%;
   }
 }
 

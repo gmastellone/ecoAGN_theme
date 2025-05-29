@@ -53,7 +53,6 @@
         "slide_mTrw9R",
         "slide_iHNnjR"
       ],
-      "name": "t:sections.slideshow.presets.name",
       "settings": {
         "layout": "full_bleed",
         "slide_height": "large",
@@ -62,7 +61,10 @@
         "change_slides_speed": 5,
         "image_behavior": "ambient",
         "show_text_below": true,
-        "accessibility_info": "ecoAGN"
+        "accessibility_info": "ecoAGN",
+        "navigation_color": "white",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "rich_text": {
@@ -228,6 +230,63 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "collection_list_4JBhdC": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_zykBa7": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "link_label": "SHOP NOW"
+          }
+        },
+        "collection_GpwApq": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "link_label": "SHOP NOW"
+          }
+        },
+        "collection_UwX6ef": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "link_label": "SHOP NOW"
+          }
+        },
+        "collection_pcdMN3": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "link_label": "SHOP NOW"
+          }
+        }
+      },
+      "block_order": [
+        "collection_zykBa7",
+        "collection_GpwApq",
+        "collection_UwX6ef",
+        "collection_pcdMN3"
+      ],
+      "name": "t:sections.collection-list.presets.name",
+      "settings": {
+        "title": "Collections",
+        "heading_size": "h1",
+        "font_family": "primary",
+        "uppercase_text": true,
+        "show_arrow": true,
+        "column_padding": 0,
+        "column_margin": 0,
+        "image_ratio": "square",
+        "columns_desktop": 4,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -236,6 +295,7 @@
     "featured_collection",
     "collage",
     "video",
-    "multicolumn"
+    "multicolumn",
+    "collection_list_4JBhdC"
   ]
 }

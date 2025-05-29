@@ -237,7 +237,7 @@
         "collection_zykBa7": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "wild",
             "link_label": "SHOP NOW"
           }
         },
@@ -269,7 +269,6 @@
         "collection_UwX6ef",
         "collection_pcdMN3"
       ],
-      "name": "t:sections.collection-list.presets.name",
       "settings": {
         "title": "Collections",
         "heading_size": "h1",

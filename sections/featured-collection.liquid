@@ -36,6 +36,11 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
+  .collection__title .title.text-{{ section.settings.text_alignment }},
+  .collection__description.text-{{ section.settings.text_alignment }} {
+    text-align: {{ section.settings.text_alignment }};
+  }
 {%- endstyle -%}
 
 {%- liquid

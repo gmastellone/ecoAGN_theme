@@ -94,7 +94,7 @@
         "collection_pcdMN3": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "basic",
             "link_label": "SHOP NOW"
           }
         }

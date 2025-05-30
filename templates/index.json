@@ -17,7 +17,7 @@
           "settings": {
             "image": "shopify://shop_images/DSC04159.jpg",
             "image_overlay_opacity": 0,
-            "heading": "JUST DROPPED<strong>ECO CHIC SWIM</strong>",
+            "heading": "JUST DROPPED<br><strong>ECO CHIC SWIM</strong>",
             "heading_size": "h0",
             "subheading": "Sustainable swimwear, custom fits, and mindful designs made just for you, the perfect blend of style and planet-friendly luxury.",
             "button_label": "",
@@ -35,7 +35,7 @@
           "settings": {
             "image": "shopify://shop_images/DSC03157.jpg",
             "image_overlay_opacity": 0,
-            "heading": "JUST DROPPED<strong>ECO CHIC SWIM</strong>",
+            "heading": "JUST DROPPED<br><strong>ECO CHIC SWIM</strong>",
             "heading_size": "h1",
             "subheading": "Sustainable swimwear, custom fits, and mindful designs made just for you, the perfect blend of style and planet-friendly luxury.",
             "button_label": "",

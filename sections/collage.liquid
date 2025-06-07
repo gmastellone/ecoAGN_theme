@@ -26,7 +26,7 @@
       </h2>
     {%- endif -%}
     {%- if section.settings.subtitle != blank -%}
-      <div class="collage-wrapper-subtitle rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+      <div class="collage-wrapper-subtitle rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %} text-{{ section.settings.subtitle_alignment }}">
         {{ section.settings.subtitle }}
       </div>
     {%- endif -%}
@@ -102,6 +102,11 @@
                     {{ 'detailed-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
                   {%- endif -%}
                 </div>
+                {%- if block.settings.image_subtitle != blank -%}
+                  <div class="collage-card__subtitle text-{{ block.settings.image_subtitle_alignment }}">
+                    {{ block.settings.image_subtitle }}
+                  </div>
+                {%- endif -%}
               </div>
             {%- when 'product' -%}
               {%- assign placeholder_image = 'product-apparel-' | append: placeholder_image_index -%}
@@ -250,6 +255,26 @@
     },
     {
       "type": "select",
+      "id": "subtitle_alignment",
+      "label": "Allineamento sottotitolo",
+      "options": [
+        {
+          "value": "left",
+          "label": "Sinistra"
+        },
+        {
+          "value": "center",
+          "label": "Centro"
+        },
+        {
+          "value": "right",
+          "label": "Destra"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "select",
       "id": "heading_size",
       "options": [
         {
@@ -390,6 +415,32 @@
           "type": "image_picker",
           "id": "image",
           "label": "t:sections.collage.blocks.image.settings.image.label"
+        },
+        {
+          "type": "richtext",
+          "id": "image_subtitle",
+          "label": "Sottotitolo immagine",
+          "default": "<p>Aggiungi un sottotitolo all'immagine</p>"
+        },
+        {
+          "type": "select",
+          "id": "image_subtitle_alignment",
+          "label": "Allineamento sottotitolo immagine",
+          "options": [
+            {
+              "value": "left",
+              "label": "Sinistra"
+            },
+            {
+              "value": "center",
+              "label": "Centro"
+            },
+            {
+              "value": "right",
+              "label": "Destra"
+            }
+          ],
+          "default": "center"
         },
         {
           "type": "range",

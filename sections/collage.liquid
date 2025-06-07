@@ -51,7 +51,10 @@
           {%- assign placeholder_image_index = forloop.index0 | modulo: 4 | plus: 1 -%}
           {%- case block.type -%}
             {%- when 'image' -%}
-              <div class="collage-card {% if section.settings.card_styles == 'none' %}global-media-settings{% else %}card-wrapper {{ section.settings.card_styles }} color-{{ settings.card_color_scheme }} gradient{% endif %}">
+              <div
+                class="collage-card {% if section.settings.card_styles == 'none' %}global-media-settings{% else %}card-wrapper {{ section.settings.card_styles }} color-{{ settings.card_color_scheme }} gradient{% endif %}"
+                style="width: {{ block.settings.image_size }}%;"
+              >
                 <div
                   class="media media--transparent ratio"
                   {% if block.settings.image != blank %}

@@ -27,18 +27,20 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
+  align-items: start;
 }
 
 .collage__item {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  width: 100%;
 }
 
 .collage__item--image {
-  overflow: hidden;
+  overflow: visible;
 }
 
 .collage__item--image img {
@@ -178,6 +180,9 @@
   border-radius: var(--border-radius);
   border: var(--border-width) solid rgba(var(--color-foreground), var(--border-opacity));
   padding: var(--image-padding);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 /* Needed for gradient continuity with or without animation, background-attachment: local scopes the gradient to its container which happens automatically when a transform is applied (animation on scroll) */
@@ -265,9 +270,12 @@
 
 .collage-card__subtitle {
   margin-top: 1rem;
-  padding: 0 1rem;
+  padding: 0.5rem 1rem;
+  width: 100%;
 }
 
 .collage-card__subtitle p {
   margin: 0;
+  font-size: 0.9em;
+  line-height: 1.4;
 }

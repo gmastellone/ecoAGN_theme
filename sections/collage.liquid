@@ -25,6 +25,11 @@
         {{ section.settings.heading }}
       </h2>
     {%- endif -%}
+    {%- if section.settings.subtitle != blank -%}
+      <div class="collage-wrapper-subtitle rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+        {{ section.settings.subtitle }}
+      </div>
+    {%- endif -%}
     <div class="collage{% if section.settings.mobile_layout == 'collage' %} collage--mobile{% endif %}">
       {% assign skip_card_product_styles = false %}
       {%- for block in section.blocks -%}
@@ -34,6 +39,13 @@
           {% if settings.animations_reveal_on_scroll %}
             data-cascade
             style="--animation-order: {{ forloop.index }};"
+          {% endif %}
+          {% if block.type == 'image' %}
+            data-image-size="{{ block.settings.image_size }}%"
+            style="--image-size: {{ block.settings.image_size }}%"
+          {% elsif block.type == 'product' %}
+            data-product-size="{{ block.settings.product_size }}%"
+            style="--product-size: {{ block.settings.product_size }}%"
           {% endif %}
         >
           {%- assign placeholder_image_index = forloop.index0 | modulo: 4 | plus: 1 -%}
@@ -231,6 +243,12 @@
       "label": "t:sections.collage.settings.heading.label"
     },
     {
+      "type": "richtext",
+      "id": "subtitle",
+      "label": "Sottotitolo",
+      "default": "<p>Aggiungi un sottotitolo al tuo collage</p>"
+    },
+    {
       "type": "select",
       "id": "heading_size",
       "options": [
@@ -261,7 +279,7 @@
     {
       "type": "header",
       "content": "t:sections.collage.settings.header_layout.content"
-    },       
+    },
     {
       "type": "select",
       "id": "desktop_layout",
@@ -291,7 +309,7 @@
           "label": "t:sections.collage.settings.mobile_layout.options__2.label"
         }
       ],
-      "default": "column",
+      "default": "collage",
       "label": "t:sections.collage.settings.mobile_layout.label"
     },
     {
@@ -310,6 +328,26 @@
       "default": "product-card-wrapper",
       "info": "t:sections.collage.settings.card_styles.info",
       "label": "t:sections.collage.settings.card_styles.label"
+    },
+    {
+      "type": "range",
+      "id": "image_size",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "label": "Dimensione immagine",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "product_size",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "label": "Dimensione prodotto",
+      "default": 100
     },
     {
       "type": "color_scheme",
@@ -352,6 +390,16 @@
           "type": "image_picker",
           "id": "image",
           "label": "t:sections.collage.blocks.image.settings.image.label"
+        },
+        {
+          "type": "range",
+          "id": "image_size",
+          "min": 50,
+          "max": 100,
+          "step": 5,
+          "unit": "%",
+          "label": "Dimensione immagine",
+          "default": 100
         }
       ]
     },
@@ -363,6 +411,16 @@
           "type": "product",
           "id": "product",
           "label": "t:sections.collage.blocks.product.settings.product.label"
+        },
+        {
+          "type": "range",
+          "id": "product_size",
+          "min": 50,
+          "max": 100,
+          "step": 5,
+          "unit": "%",
+          "label": "Dimensione prodotto",
+          "default": 100
         },
         {
           "type": "checkbox",

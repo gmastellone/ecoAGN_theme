@@ -97,13 +97,21 @@
             "collection": "basic",
             "link_label": "SHOP NOW"
           }
+        },
+        "collection_9jzLxr": {
+          "type": "collection",
+          "settings": {
+            "collection": "accessories",
+            "link_label": "SHOP NOW"
+          }
         }
       },
       "block_order": [
         "collection_zykBa7",
         "collection_GpwApq",
         "collection_UwX6ef",
-        "collection_pcdMN3"
+        "collection_pcdMN3",
+        "collection_9jzLxr"
       ],
       "settings": {
         "title": "",
@@ -114,7 +122,7 @@
         "column_padding": 0,
         "column_margin": 0,
         "image_ratio": "square",
-        "columns_desktop": 4,
+        "columns_desktop": 5,
         "color_scheme": "",
         "show_view_all": false,
         "columns_mobile": "1",

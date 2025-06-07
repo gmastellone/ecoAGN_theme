@@ -73,7 +73,7 @@
       ],
       "name": "t:sections.collage.presets.name",
       "settings": {
-        "heading": "Highlights",
+        "heading": "",
         "subtitle": "",
         "subtitle_alignment": "center",
         "heading_size": "h2",

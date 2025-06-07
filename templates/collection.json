@@ -44,7 +44,9 @@
           "type": "image",
           "settings": {
             "image": "{{ collection.metafields.collection.featured_image.value }}",
-            "image_size": 50
+            "image_subtitle": "{{ collection.metafields.collection.model_name | metafield_tag }}",
+            "image_subtitle_alignment": "center",
+            "image_size": 75
           }
         },
         "product_7AijBE": {
@@ -73,6 +75,7 @@
       "settings": {
         "heading": "Highlights",
         "subtitle": "",
+        "subtitle_alignment": "center",
         "heading_size": "h2",
         "desktop_layout": "left",
         "mobile_layout": "collage",

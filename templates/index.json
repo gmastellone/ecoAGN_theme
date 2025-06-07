@@ -113,6 +113,9 @@
         "collection_pcdMN3",
         "collection_9jzLxr"
       ],
+      "custom_css": [
+        "section {padding: o o o o !important;}"
+      ],
       "settings": {
         "title": "",
         "heading_size": "h1",
@@ -121,7 +124,7 @@
         "show_arrow": true,
         "column_padding": 0,
         "column_margin": 0,
-        "image_ratio": "square",
+        "image_ratio": "portrait",
         "columns_desktop": 5,
         "color_scheme": "",
         "show_view_all": false,

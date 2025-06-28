@@ -16,6 +16,46 @@
         "padding_bottom": 28
       }
     },
+    "rich_text_YaFKVj": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_gRL7nj": {
+          "type": "heading",
+          "settings": {
+            "heading": "WITH GRATITUDE",
+            "heading_size": "h1"
+          }
+        },
+        "caption_VG6NeR": {
+          "type": "caption",
+          "settings": {
+            "caption": "People behind ecoagn launch",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "text_eBeyUV": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At <strong>EcoAGN</strong>, we believe in conscious creation — not only of garments, but of ideas, values, and community.</p><p>This brand wouldn’t exist without the generous talent, time, and belief of the people below.<br/><br/>Their creativity and commitment shaped our voice, visuals, and spirit. We’re proud to recognize them as part of EcoAGN’s foundation.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_gRL7nj",
+        "caption_VG6NeR",
+        "text_eBeyUV"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "multirow_it3LeK": {
       "type": "multirow",
       "blocks": {
@@ -130,6 +170,7 @@
   },
   "order": [
     "main",
+    "rich_text_YaFKVj",
     "multirow_it3LeK"
   ]
 }

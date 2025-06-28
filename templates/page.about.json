@@ -23,7 +23,7 @@
           "type": "heading",
           "settings": {
             "heading": "WITH GRATITUDE",
-            "heading_size": "h1"
+            "heading_size": "h2"
           }
         },
         "caption_VG6NeR": {
@@ -52,7 +52,7 @@
         "content_alignment": "center",
         "color_scheme": "",
         "full_width": true,
-        "padding_top": 40,
+        "padding_top": 64,
         "padding_bottom": 52
       }
     },

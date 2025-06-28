@@ -190,19 +190,12 @@
           "type": "heading",
           "settings": {
             "heading": "<strong>Sustainably Made. Mediterranean Inspired. Made to Move with You.</strong>",
-            "heading_size": "h1"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>At <strong>EcoAGN</strong>, we believe swimwear should feel as good as it looks, for you and the planet.</p><p>Our bikinis and beachwear are designed with intention, blending timeless Italian style with a deep commitment to sustainability.</p><p>From sun-kissed lemon tones to romantic Neapolitan prints, each piece in our collection is a love letter to the Mediterranean lifestyle: eﬀortless, natural, and always vibrant.</p>"
+            "heading_size": "h0"
           }
         }
       },
       "block_order": [
-        "heading",
-        "text"
+        "heading"
       ],
       "settings": {
         "desktop_content_position": "center",
@@ -326,7 +319,7 @@
       "settings": {
         "image_height": "small",
         "desktop_image_width": "small",
-        "image_layout": "alternate-left",
+        "image_layout": "alternate-right",
         "heading_size": "h2",
         "text_style": "body",
         "button_style": "secondary",

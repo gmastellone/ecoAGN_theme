@@ -3689,3 +3689,8 @@ a,
 a:visited {
   color: #000 !important;
 }
+
+.collage__item--image a,
+.collage__item--image a:visited {
+  color: #000 !important;
+}

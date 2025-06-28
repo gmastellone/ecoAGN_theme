@@ -15,9 +15,121 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "multirow_it3LeK": {
+      "type": "multirow",
+      "blocks": {
+        "row_6cwKHQ": {
+          "type": "row",
+          "settings": {
+            "caption": "Web Strategy & Development",
+            "heading": "Giorgia Esposito",
+            "text": "<p>Giorgia was the creative force behind our visual and strategic identity. From shaping the rebrand and directing the photo shoots, to curating models and photographers, defining marketing content, and managing our social media, SEO, and copy — she brought EcoAGN to life across every detail.</p><p>LinkedIn: <a href=\"https://www.linkedin.com/in/giorgiaesposito-smm/\" target=\"_blank\">giorgiaesposito-smm</a><br/>Instagram: <a href=\"https://www.instagram.com/espositog_/\" target=\"_blank\">@espositog_</a><br/>Web: <a href=\"http://giorgiaesposito.com/\" target=\"_blank\">giorgiaesposito.com</a></p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_Y3Fnbp": {
+          "type": "row",
+          "settings": {
+            "caption": "Web Strategy & Development",
+            "heading": "Giovanni Mastellone",
+            "text": "<p>Giovanni supported the digital backbone of EcoAGN, contributing to our web marketing strategy, site development, and SEO foundation.</p><p>LinkedIn: <a href=\"https://www.linkedin.com/in/giovannimastellone/\" target=\"_blank\">giovannimastellone</a><br/>Instagram: <a href=\"https://www.instagram.com/giovannimastellone/\" target=\"_blank\">@giovannimastellone</a><br/>Web: <a href=\"https://giovannimastellone.it/\" target=\"_blank\">giovannimastellone.it</a></p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_xHeFjj": {
+          "type": "row",
+          "settings": {
+            "caption": "Photographer & Model",
+            "heading": "Silvia Mazzi",
+            "text": "<p>Silvia captured the soul of EcoAGN both behind and in front of the lens. Her photography, editing, and modeling helped visually define our launch collection.</p><p>Linkedin: <a href=\"https://www.linkedin.com/in/silvia-mazzi\" target=\"_blank\" title=\"silvia-mazzi\">silvia-mazzi</a><br/>Instagram: <a href=\"https://www.instagram.com/sea_lvia\" target=\"_blank\" title=\"https://www.instagram.com/sea_lvia\">@sea_lvia</a></p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_HDp9bj": {
+          "type": "row",
+          "settings": {
+            "caption": "Makeup Artist",
+            "heading": "Manuela Cocchi",
+            "text": "<p>Manuela enhanced every face with a natural touch that complemented our soft, ocean-inspired aesthetic.</p><p>Instagram: <a href=\"https://www.instagram.com/manuelcita_makeup\" target=\"_blank\" title=\"manuelcita_makeup\">@manuelcita_makeup</a></p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_bmbgwd": {
+          "type": "row",
+          "settings": {
+            "caption": "Model",
+            "heading": "Celeste Marrone",
+            "text": "<p>Instagram: <a href=\"https://www.instagram.com/celestemareea/\" target=\"_blank\" title=\"celestemareea\">@celestemareea</a></p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_eJD7RL": {
+          "type": "row",
+          "settings": {
+            "caption": "Model",
+            "heading": "Stephany Haye",
+            "text": "<p>Instagram: <a href=\"https://www.instagram.com/hayestephany/\" target=\"_blank\" title=\"hayestephany\">@hayestephany</a></p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_tXQBpa": {
+          "type": "row",
+          "settings": {
+            "caption": "Model",
+            "heading": "Chiara Guarino",
+            "text": "<p>Instagram: <a href=\"https://www.instagram.com/chiiaraguarino/\" target=\"_blank\" title=\"chiiaraguarino\">@chiiaraguarino</a></p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_W3BYrx": {
+          "type": "row",
+          "settings": {
+            "caption": "Model",
+            "heading": "Renata Gargiulo",
+            "text": "<p>Instagram: <a href=\"https://www.instagram.com/la_canaliss/\" title=\"la_canaliss\">@la_canaliss</a></p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_6cwKHQ",
+        "row_Y3Fnbp",
+        "row_xHeFjj",
+        "row_HDp9bj",
+        "row_bmbgwd",
+        "row_eJD7RL",
+        "row_tXQBpa",
+        "row_W3BYrx"
+      ],
+      "name": "t:sections.multirow.presets.name",
+      "settings": {
+        "image_height": "small",
+        "desktop_image_width": "small",
+        "image_layout": "align-left",
+        "heading_size": "h2",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "multirow_it3LeK"
   ]
 }

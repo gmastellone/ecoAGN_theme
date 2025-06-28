@@ -103,6 +103,7 @@
         "row_bmbgwd": {
           "type": "row",
           "settings": {
+            "image": "shopify://shop_images/DSC03199_jpg.png",
             "caption": "Model",
             "heading": "Celeste Marrone",
             "text": "<p>Instagram: <a href=\"https://www.instagram.com/celestemareea/\" target=\"_blank\" title=\"celestemareea\">@celestemareea</a></p>",
@@ -113,6 +114,7 @@
         "row_eJD7RL": {
           "type": "row",
           "settings": {
+            "image": "shopify://shop_images/steph.png",
             "caption": "Model",
             "heading": "Stephany Haye",
             "text": "<p>Instagram: <a href=\"https://www.instagram.com/hayestephany/\" target=\"_blank\" title=\"hayestephany\">@hayestephany</a></p>",

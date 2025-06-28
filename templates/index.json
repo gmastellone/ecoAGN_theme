@@ -215,8 +215,8 @@
         "column1": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "title": "Crafted for everyone",
+            "text": "<p>We create swimwear that c<strong>elebrates every body</strong>, with sizes up to 6XL.<br/>Every style is crafted with <strong>versatility</strong> in mind: adjustable ties, removable padding, and thoughtful design details let you wear your pieces your way.</p>",
             "link_label": "",
             "link": ""
           }
@@ -224,8 +224,8 @@
         "column2": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "title": "Eco Friendly",
+            "text": "<p>We use premium <strong>eco-friendly fabrics</strong> like recycled polyester and elastane,<br/>certified by <em><strong>OEKO-TEX®</strong></em> and the Global Recycled Standard (GRS), to create flattering,<br/>high-quality swimwear</p>",
             "link_label": "",
             "link": ""
           }
@@ -233,8 +233,8 @@
         "column3": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "title": "Marine protection",
+            "text": "<p>We go beyond sustainable materials: <strong>50% of every sale is donated directly to marine protection organizations</strong>.<br/>Every purchase helps support the restoration of ocean ecosystems, reduce plastic pollution, and protect the wildlife that inspires our collections.</p>",
             "link_label": "",
             "link": ""
           }

@@ -3684,3 +3684,8 @@ details-disclosure > details {
     transform: translateX(100%) scaleX(0);
   }
 }
+
+a,
+a:visited {
+  color: #000 !important;
+}

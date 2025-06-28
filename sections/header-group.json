@@ -20,18 +20,10 @@
             "text": "Welcome to Ecoagn Swimwear",
             "link": ""
           }
-        },
-        "announcement_an86We": {
-          "type": "announcement",
-          "settings": {
-            "text": "Welcome to our store",
-            "link": ""
-          }
         }
       },
       "block_order": [
-        "announcement-bar-0",
-        "announcement_an86We"
+        "announcement-bar-0"
       ],
       "settings": {
         "auto_rotate": false,

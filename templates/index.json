@@ -30,6 +30,24 @@
             "color_scheme": "scheme-4"
           }
         },
+        "slide_qEYEmP": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/renata.jpg",
+            "image_overlay_opacity": 0,
+            "heading": "JUST DROPPED<br><strong>ECO CHIC SWIM</strong>",
+            "heading_size": "h1",
+            "subheading": "Sustainable swimwear, custom fits, and mindful designs made just for you, the perfect blend of style and planet-friendly luxury.",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "bottom-left",
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "color_scheme": "scheme-4"
+          }
+        },
         "slide_iHNnjR": {
           "type": "slide",
           "settings": {
@@ -51,6 +69,7 @@
       },
       "block_order": [
         "slide_mTrw9R",
+        "slide_qEYEmP",
         "slide_iHNnjR"
       ],
       "settings": {

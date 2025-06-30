@@ -58,7 +58,7 @@
             "heading": "Sizing",
             "content": "<p>{{ block.settings.page.title }} size chart:</p>",
             "page": "",
-            "metafield_pdf": "{product.sizing_chart}",
+            "metafield_pdf": "product.sizing_chart",
             "icon": "shirt"
           }
         },

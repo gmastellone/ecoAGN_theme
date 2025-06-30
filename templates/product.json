@@ -56,40 +56,36 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Sizing",
-            "content": "<p>{{ block.settings.page.title }} size chart:</p>",
-            "page": "",
-            "metafield_pdf": "product.sizing_chart",
-            "icon": "shirt"
+            "icon": "shirt",
+            "content": "",
+            "page": ""
           }
         },
         "collapsible-row-0": {
           "type": "collapsible_tab",
           "settings": {
             "heading": "Materials",
+            "icon": "leather",
             "content": "",
-            "page": "",
-            "metafield_pdf": "",
-            "icon": "leather"
+            "page": ""
           }
         },
         "collapsible-row-3": {
           "type": "collapsible_tab",
           "settings": {
             "heading": "Care Instructions",
+            "icon": "heart",
             "content": "",
-            "page": "",
-            "metafield_pdf": "",
-            "icon": "heart"
+            "page": ""
           }
         },
         "collapsible-row-1": {
           "type": "collapsible_tab",
           "settings": {
             "heading": "Shipping & Returns",
+            "icon": "truck",
             "content": "",
-            "page": "",
-            "metafield_pdf": "",
-            "icon": "truck"
+            "page": ""
           }
         },
         "complementary_JCyPaP": {

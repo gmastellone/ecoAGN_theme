@@ -225,15 +225,20 @@
                       {{ block.settings.content }}
                       {{ block.settings.page.content }}
 
-                      {%- assign metafield_key = block.settings.metafield_pdf -%}
-                      {%- if metafield_key != blank and product.metafields[metafield_key] != blank -%}
-                        {%- assign pdf_file = product.metafields[metafield_key].value -%}
-                        {%- if pdf_file -%}
-                          <p>
-                            <a href="{{ pdf_file.url }}" class="link" target="_blank" rel="noopener">
-                              Download: {{ pdf_file.filename }}
-                            </a>
-                          </p>
+                      {%- assign metafield_string = block.settings.metafield_pdf | strip -%}
+                      {%- if metafield_string != blank -%}
+                        {%- assign key_parts = metafield_string | split: '.' -%}
+                        {%- assign namespace = key_parts.first -%}
+                        {%- assign key = key_parts.last -%}
+                        {%- if product.metafields[namespace] and product.metafields[namespace][key] -%}
+                          {%- assign pdf_file = product.metafields[namespace][key].value -%}
+                          {%- if pdf_file -%}
+                            <p>
+                              <a href="{{ pdf_file.url }}" class="link" target="_blank" rel="noopener">
+                                Download: {{ pdf_file.filename }}
+                              </a>
+                            </p>
+                          {%- endif -%}
                         {%- endif -%}
                       {%- endif -%}
                     </div>

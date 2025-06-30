@@ -122,9 +122,9 @@
       "inventory_in_stock": "In stock",
       "inventory_in_stock_show_count": "{{ quantity }} in stock",
       "inventory_low_stock": "Low stock",
-      "inventory_low_stock_show_count": "Only {{ quantity }} left!",
+      "inventory_low_stock_show_count": "Low stock: {{ quantity }} left",
       "inventory_out_of_stock": "Out of stock",
-      "inventory_out_of_stock_continue_selling": "Available on backorder",
+      "inventory_out_of_stock_continue_selling": "In stock",
       "sku": "SKU",
       "on_sale": "Sale",
       "product_variants": "Product variants",
@@ -152,9 +152,11 @@
         "note": "View quantity rules"
       },
       "volume_pricing": {
+        "title": "Volume Pricing",
         "note": "Volume pricing available",
-        "title": "Volume pricing",
-        "unit_price": "Unit price"
+        "minimum": "{{ quantity }}+",
+        "price_at_each_html": "at {{ price }}/ea",
+        "price_range": "{{ minimum }} - {{ maximum }}"
       },
       "pickup_availability": {
         "view_store_info": "View store information",
@@ -184,12 +186,10 @@
       "taxes_included": "Taxes included.",
       "duties_included": "Duties included.",
       "duties_and_taxes_included": "Duties and taxes included.",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Shipping</a> calculated at checkout.",
-      "use_variant": "Use variant",
-      "download_pdf": "Download: {{ filename }}"
+      "shipping_policy_html": "<a href=\"{{ link }}\">Shipping</a> calculated at checkout."
     },
     "modal": {
-      "label": "Product media"
+      "label": "Media gallery"
     },
     "facets": {
       "filter_and_operator_subtitle": "Match all",
@@ -229,7 +229,7 @@
       "subtext": "404"
     },
     "search": {
-      "no_results": "No results found for "{{ terms }}". Check the spelling or use a different word or phrase.",
+      "no_results": "No results found for “{{ terms }}”. Check the spelling or use a different word or phrase.",
       "page": "Page",
       "products": "Products",
       "results_pages_with_count": {
@@ -249,11 +249,11 @@
         "other": "{{ count }} results"
       },
       "results_with_count_and_term": {
-        "one": "{{ count }} result found for "{{ terms }}",
-        "other": "{{ count }} results found for "{{ terms }}"
+        "one": "{{ count }} result found for “{{ terms }}”",
+        "other": "{{ count }} results found for “{{ terms }}”"
       },
       "title": "Search results",
-      "search_for": "Search for "{{ terms }}",
+      "search_for": "Search for “{{ terms }}”",
       "suggestions": "Suggestions",
       "pages": "Pages"
     },

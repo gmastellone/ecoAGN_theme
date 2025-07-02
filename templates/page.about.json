@@ -116,7 +116,7 @@
           "settings": {
             "image": "shopify://shop_images/steph.png",
             "caption": "Model",
-            "heading": "Stephany Haye",
+            "heading": "Stephany Landolfi",
             "text": "<p>Instagram: <a href=\"https://www.instagram.com/hayestephany/\" target=\"_blank\" title=\"hayestephany\">@hayestephany</a></p>",
             "button_label": "",
             "button_link": ""
@@ -136,6 +136,7 @@
         "row_W3BYrx": {
           "type": "row",
           "settings": {
+            "image": "shopify://shop_images/renata_3.png",
             "caption": "Model",
             "heading": "Renata Gargiulo",
             "text": "<p>Instagram: <a href=\"https://www.instagram.com/la_canaliss/\" title=\"la_canaliss\">@la_canaliss</a></p>",

@@ -52,15 +52,6 @@
             "show_gift_card_recipient": true
           }
         },
-        "collapsible-row-2": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Sizing",
-            "icon": "shirt",
-            "content": "<p>{{ product.metafields.product.size_chart | metafield_tag }}</p>",
-            "page": ""
-          }
-        },
         "collapsible-row-0": {
           "type": "collapsible_tab",
           "settings": {
@@ -116,7 +107,6 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "collapsible-row-2",
         "collapsible-row-0",
         "collapsible-row-3",
         "collapsible-row-1",

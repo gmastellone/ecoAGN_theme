@@ -84,7 +84,7 @@
           "settings": {
             "heading": "Shipping & Returns",
             "icon": "truck",
-            "content": "",
+            "content": "<p><strong>Shipping times:</strong></p><ul><li>USA: 3–4 business days</li><li>Europe: 6–8 business days</li><li>Australia: 2–14 business days</li><li>Japan: 4–8 business days</li><li>International: 10–20 business days</li></ul><p><strong>Return Eligibility</strong>: You can return your item at any time as long as it’s in the same condition you received it, unworn or unused, with tags, and in its original packaging.</p><p><strong>Shipping Costs</strong>: The only cost to you is the return shipping to our headquarters. Once we receive your return, we’ll fully refund your order.<br/><br/>You can read more on the <a href=\"/policies/shipping-policy\" target=\"_blank\" title=\"Shipping Policy\">shippings</a> and <a href=\"/policies/refund-policy\" target=\"_blank\" title=\"Refund Policy\">refuns</a> policy pages.</p>",
             "page": ""
           }
         },

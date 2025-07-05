@@ -3722,11 +3722,3 @@ a:visited {
     padding-right: 1.5rem !important;
   }
 }
-
-@media screen and (max-width: 749px) {
-  footer .page-width,
-  .footer .page-width {
-    padding-left: 2rem !important;
-    padding-right: 2rem !important;
-  }
-}

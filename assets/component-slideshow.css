@@ -82,7 +82,6 @@ slideshow-component .slideshow.banner {
     position: relative;
     z-index: 2;
     background: transparent;
-    left:35px;
   }
 
   .slideshow__text-wrapper.banner__content,

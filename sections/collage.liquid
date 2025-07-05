@@ -30,7 +30,7 @@
         {{ section.settings.subtitle }}
       </div>
     {%- endif -%}
-    <div class="collage{% if section.settings.mobile_layout == 'collage' %} collage--mobile{% endif %}">
+    <div class="collage{% if section.blocks.size == 3 %} collage--custom-mobile-row{% endif %}{% if section.settings.mobile_layout == 'collage' %} collage--mobile{% endif %}">
       {% assign skip_card_product_styles = false %}
       {%- for block in section.blocks -%}
         <div

@@ -202,10 +202,7 @@
 }
 
 /* Grid adjustments */
-.grid {
-  margin-left: -5rem !important;
-  margin-right: -5rem !important;
-}
+
 
 @media screen and (min-width: 750px) {
   .grid {
@@ -261,3 +258,11 @@
     margin-bottom: 4rem !important;
   }
 } 
+
+@media screen and (max-width: 750px) {
+  .page-width {
+
+    padding-left: 2.5rem !important;
+    padding-right: 2.5rem !important;
+  }
+}

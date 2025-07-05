@@ -57,7 +57,7 @@
           "settings": {
             "heading": "Sizing",
             "icon": "shirt",
-            "content": "{{ product.metafields.product.sizechartHTML | metafield_tag }}",
+            "content": "<p>{{ product.metafields.custom.size_chart | metafield_tag }}</p>",
             "page": ""
           }
         },

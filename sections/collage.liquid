@@ -30,55 +30,68 @@
         {{ section.settings.subtitle }}
       </div>
     {%- endif -%}
-    <div class="collage{% if section.blocks.size == 3 %} collage--custom-mobile-row{% endif %}{% if section.settings.mobile_layout == 'collage' %} collage--mobile{% endif %}">
-      {% assign skip_card_product_styles = false %}
-      {%- for block in section.blocks -%}
-        <div
-          class="collage__item collage__item--{{ block.type }} collage__item--{{ section.settings.desktop_layout }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
-          {{ block.shopify_attributes }}
-          {% if settings.animations_reveal_on_scroll %}
-            data-cascade
-            style="--animation-order: {{ forloop.index }};"
-          {% endif %}
-          {% if block.type == 'image' %}
-            data-image-size="{{ block.settings.image_size }}%"
-            style="--image-size: {{ block.settings.image_size }}%"
-          {% elsif block.type == 'product' %}
-            data-product-size="{{ block.settings.product_size }}%"
-            style="--product-size: {{ block.settings.product_size }}%"
-          {% endif %}
-        >
-          {%- assign placeholder_image_index = forloop.index0 | modulo: 4 | plus: 1 -%}
-          {%- case block.type -%}
-            {%- when 'image' -%}
-              <div
-                class="collage-card {% if section.settings.card_styles == 'none' %}global-media-settings{% else %}card-wrapper {{ section.settings.card_styles }} color-{{ settings.card_color_scheme }} gradient{% endif %}"
-                style="width: {{ block.settings.image_size }}%;"
-              >
+    {%- if section.blocks.size == 3 -%}
+      <div class="collage collage--custom-mobile-row{% if section.settings.mobile_layout == 'collage' %} collage--mobile{% endif %}">
+        <div class="collage__main-column">
+          {%- assign first_block = section.blocks[0] -%}
+          {%- render 'collage-block', block: first_block, section: section, forloop: forloop -%}
+        </div>
+        <div class="collage__side-column">
+          {%- assign second_block = section.blocks[1] -%}
+          {%- assign third_block = section.blocks[2] -%}
+          {%- render 'collage-block', block: second_block, section: section, forloop: forloop -%}
+          {%- render 'collage-block', block: third_block, section: section, forloop: forloop -%}
+        </div>
+      </div>
+    {%- else -%}
+      <div class="collage{% if section.settings.mobile_layout == 'collage' %} collage--mobile{% endif %}">
+        {% assign skip_card_product_styles = false %}
+        {%- for block in section.blocks -%}
+          <div
+            class="collage__item collage__item--{{ block.type }} collage__item--{{ section.settings.desktop_layout }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+            {{ block.shopify_attributes }}
+            {% if settings.animations_reveal_on_scroll %}
+              data-cascade
+              style="--animation-order: {{ forloop.index }};"
+            {% endif %}
+            {% if block.type == 'image' %}
+              data-image-size="{{ block.settings.image_size }}%"
+              style="--image-size: {{ block.settings.image_size }}%"
+            {% elsif block.type == 'product' %}
+              data-product-size="{{ block.settings.product_size }}%"
+              style="--product-size: {{ block.settings.product_size }}%"
+            {% endif %}
+          >
+            {%- case block.type -%}
+              {%- when 'image' -%}
                 <div
-                  class="media media--transparent ratio"
-                  {% if block.settings.image != blank %}
-                    style="--ratio-percent: {{ 1 | divided_by: block.settings.image.aspect_ratio | times: 100 }}%"
-                  {% else %}
-                    style="--ratio-percent: 100%"
-                  {% endif %}
+                  class="collage-card {% if section.settings.card_styles == 'none' %}global-media-settings{% else %}card-wrapper {{ section.settings.card_styles }} color-{{ settings.card_color_scheme }} gradient{% endif %}"
+                  style="width: {{ block.settings.image_size }}%;"
                 >
-                  {%- if block.settings.image != blank -%}
-                    {%- liquid
-                      if section.settings.desktop_layout == 'left'
-                        assign large_block = forloop.first
-                      else
-                        assign large_block = forloop.last
-                      endif
+                  <div
+                    class="media media--transparent ratio"
+                    {% if block.settings.image != blank %}
+                      style="--ratio-percent: {{ 1 | divided_by: block.settings.image.aspect_ratio | times: 100 }}%"
+                    {% else %}
+                      style="--ratio-percent: 100%"
+                    {% endif %}
+                  >
+                    {%- if block.settings.image != blank -%}
+                      {%- liquid
+                        if section.settings.desktop_layout == 'left'
+                          assign large_block = forloop.first
+                        else
+                          assign large_block = forloop.last
+                        endif
 
-                      assign grid_space_desktop = settings.spacing_grid_horizontal | divided_by: 2 | append: 'px'
-                      assign grid_space_mobile = settings.spacing_grid_horizontal | divided_by: 4 | append: 'px'
-                    -%}
-                    {%- if large_block -%}
-                      {%- capture sizes -%}
-                        {% if section.blocks.size == 1 -%}(min-width: {{ settings.page_width }}px) calc({{ settings.page_width }}px - 100px){% else %}(min-width: {{ settings.page_width }}px) calc(({{ settings.page_width }}px - 100px) * 2 / 3 - {{ grid_space_desktop }}){% endif %},
-                        {% if section.blocks.size == 1 -%}(min-width: 750px) calc(100vw - 100px){% else %}(min-width: 750px) calc((100vw - 100px) * 2 / 3 - {{ grid_space_desktop }}){% endif %},
-                        {% if section.blocks.size == 2 and section.settings.mobile_layout == 'collage' -%}calc((100vw - 30px) / 2){% else %}calc(100vw - 30px){% endif %}
+                        assign grid_space_desktop = settings.spacing_grid_horizontal | divided_by: 2 | append: 'px'
+                        assign grid_space_mobile = settings.spacing_grid_horizontal | divided_by: 4 | append: 'px'
+                      -%}
+                      {%- if large_block -%}
+                        {%- capture sizes -%}
+                          {% if section.blocks.size == 1 -%}(min-width: {{ settings.page_width }}px) calc({{ settings.page_width }}px - 100px){% else %}(min-width: {{ settings.page_width }}px) calc(({{ settings.page_width }}px - 100px) * 2 / 3 - {{ grid_space_desktop }}){% endif %},
+                          {% if section.blocks.size == 1 -%}(min-width: 750px) calc(100vw - 100px){% else %}(min-width: 750px) calc((100vw - 100px) * 2 / 3 - {{ grid_space_desktop }}){% endif %},
+                          {% if section.blocks.size == 2 and section.settings.mobile_layout == 'collage' -%}calc((100vw - 30px) / 2){% else %}calc(100vw - 30px){% endif %}
                         {%- endcapture -%}
                       {{
                         block.settings.image
@@ -122,7 +135,7 @@
                 skip_styles: skip_card_product_styles
               %}
               {% assign skip_card_product_styles = true %}
-            {%- when 'collection' -%}
+            
               {%- assign placeholder_image = 'collection-apparel-' | append: placeholder_image_index -%}
               {% render 'card-collection',
                 card_collection: block.settings.collection,
@@ -135,7 +148,7 @@
             {%- when 'video' -%}
               <div class="collage-card {% if section.settings.card_styles == 'none' %}global-media-settings{% else %}{{ section.settings.card_styles }} color-{{ settings.card_color_scheme }} gradient{% endif %}">
                 <modal-opener data-modal="#PopupModal-{{ block.id }}">
-                  <div class="deferred-media">
+                  
                     <button
                       class="deferred-media__poster full-unstyled-link"
                       type="button"
@@ -184,7 +197,7 @@
                 <modal-dialog
                   id="PopupModal-{{ block.id }}"
                   class="modal-video media-modal color-{{ settings.color_schemes | first }}"
-                >
+                
                   <div
                     class="modal-video__content"
                     role="dialog"

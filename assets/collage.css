@@ -83,16 +83,25 @@
 @media screen and (max-width: 749px) {
   .collage {
     display: flex !important;
-    flex-direction: row;
+    flex-direction: column;
     gap: 0.5rem;
-    align-items: stretch;
     width: 100%;
     max-width: 100%;
-    overflow-x: hidden;
   }
   .collage__item {
+    width: 100%;
     min-width: 0;
     box-sizing: border-box;
+    margin: 0;
+  }
+  .collage__row {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    width: 100%;
+  }
+  .collage__row .collage__item {
+    width: 50%;
   }
   .collage__item img,
   .collage-card img,
@@ -103,14 +112,6 @@
     height: auto;
     object-fit: cover;
     display: block;
-  }
-  .collage .collage__item:nth-child(1):nth-last-child(2),
-  .collage .collage__item:nth-child(1):nth-last-child(3) {
-    flex: 1.2 1 0;
-  }
-  .collage .collage__item:nth-child(2),
-  .collage .collage__item:nth-child(3) {
-    flex: 1 1 0;
   }
 }
 

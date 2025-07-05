@@ -102,7 +102,7 @@
         "subtitle_alignment": "center",
         "heading_size": "h2",
         "desktop_layout": "left",
-        "mobile_layout": "collage",
+        "mobile_layout": "column",
         "card_styles": "product-card-wrapper",
         "image_size": 80,
         "product_size": 50,

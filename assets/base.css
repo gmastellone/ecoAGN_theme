@@ -3695,14 +3695,3 @@ a:visited {
   color: #000 !important;
 }
 
-@media screen and (max-width: 749px) {
-  body .section,
-  .shopify-section.section {
-    padding-left: 1rem !important;
-    padding-right: 1rem !important;
-  }
-  .collection-hero.section {
-    padding-left: 1.5rem !important;
-    padding-right: 1.5rem !important;
-  }
-}

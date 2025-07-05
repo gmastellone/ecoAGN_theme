@@ -33,14 +33,36 @@
     {%- if section.blocks.size == 3 -%}
       <div class="collage collage--custom-mobile-row{% if section.settings.mobile_layout == 'collage' %} collage--mobile{% endif %}">
         <div class="collage__main-column">
-          {%- assign first_block = section.blocks[0] -%}
-          {%- render 'collage-block', block: first_block, section: section, forloop: forloop -%}
+          {%- assign block = section.blocks[0] -%}
+          <div class="collage__item collage__item--{{ block.type }} collage__item--{{ section.settings.desktop_layout }}">
+            {%- case block.type -%}
+              {%- when 'image' -%}
+                {%- render 'card-image', block: block, section: section -%}
+              {%- when 'product' -%}
+                {%- render 'card-product', card_product: block.settings.product, media_aspect_ratio: 'adapt', show_secondary_image: block.settings.second_image, extend_height: true -%}
+              {%- when 'collection' -%}
+                {%- render 'card-collection', card_collection: block.settings.collection, media_aspect_ratio: 'adapt', columns: 2, extend_height: true -%}
+              {%- when 'video' -%}
+                {%- render 'card-video', block: block, section: section -%}
+            {%- endcase -%}
+          </div>
         </div>
         <div class="collage__side-column">
-          {%- assign second_block = section.blocks[1] -%}
-          {%- assign third_block = section.blocks[2] -%}
-          {%- render 'collage-block', block: second_block, section: section, forloop: forloop -%}
-          {%- render 'collage-block', block: third_block, section: section, forloop: forloop -%}
+          {%- for i in (1..2) -%}
+            {%- assign block = section.blocks[i] -%}
+            <div class="collage__item collage__item--{{ block.type }} collage__item--{{ section.settings.desktop_layout }}">
+              {%- case block.type -%}
+                {%- when 'image' -%}
+                  {%- render 'card-image', block: block, section: section -%}
+                {%- when 'product' -%}
+                  {%- render 'card-product', card_product: block.settings.product, media_aspect_ratio: 'adapt', show_secondary_image: block.settings.second_image, extend_height: true -%}
+                {%- when 'collection' -%}
+                  {%- render 'card-collection', card_collection: block.settings.collection, media_aspect_ratio: 'adapt', columns: 2, extend_height: true -%}
+                {%- when 'video' -%}
+                  {%- render 'card-video', block: block, section: section -%}
+              {%- endcase -%}
+            </div>
+          {%- endfor -%}
         </div>
       </div>
     {%- else -%}

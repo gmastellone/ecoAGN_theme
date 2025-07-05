@@ -3730,3 +3730,11 @@ a:visited {
     padding-right: 2rem !important;
   }
 }
+
+html, body {
+  overflow-x: hidden;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}

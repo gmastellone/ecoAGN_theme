@@ -176,8 +176,8 @@
 
 /* General section adjustments */
 .section {
-  padding-left: 5rem !important;
-  padding-right: 5rem !important;
+  padding-left: 2.5rem !important;
+  padding-right: 2.5rem !important;
 }
 
 @media screen and (min-width: 750px) {

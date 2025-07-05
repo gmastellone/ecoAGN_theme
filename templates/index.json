@@ -133,7 +133,7 @@
         "collection_9jzLxr"
       ],
       "custom_css": [
-        "section {padding: o o o o !important;}"
+        "section {padding: o 35px !important;}"
       ],
       "settings": {
         "title": "",

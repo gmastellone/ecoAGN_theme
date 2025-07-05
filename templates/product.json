@@ -58,7 +58,7 @@
             "heading": "Sizing",
             "icon": "shirt",
             "content": "",
-            "page": ""
+            "page": "{{ product.metafields.custom.category_sizinig_page.value }}"
           }
         },
         "collapsible-row-0": {

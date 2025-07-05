@@ -3694,3 +3694,10 @@ a:visited {
 .collage__item--image a:visited {
   color: #000 !important;
 }
+
+@media screen and (max-width: 749px) {
+  .section {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}

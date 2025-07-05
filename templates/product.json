@@ -57,7 +57,7 @@
           "settings": {
             "heading": "Sizing",
             "icon": "shirt",
-            "content": "{{ custom.size_chart.value }}",
+            "content": "",
             "page": ""
           }
         },

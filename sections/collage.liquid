@@ -147,7 +147,7 @@
                 {%- endif -%}
               </div>
             {%- when 'product' -%}
-              {%- assign placeholder_image = 'product-apparel-' | append: placeholder_image_index -%}
+              {%- assign placeholder_image = 'product-apparel-' | append: forloop.index0 | modulo: 4 | plus: 1 -%}
               {% render 'card-product',
                 card_product: block.settings.product,
                 media_aspect_ratio: 'adapt',
@@ -158,7 +158,7 @@
               %}
               {% assign skip_card_product_styles = true %}
             
-              {%- assign placeholder_image = 'collection-apparel-' | append: placeholder_image_index -%}
+              {%- assign placeholder_image = 'collection-apparel-' | append: forloop.index0 | modulo: 4 | plus: 1 -%}
               {% render 'card-collection',
                 card_collection: block.settings.collection,
                 media_aspect_ratio: 'adapt',

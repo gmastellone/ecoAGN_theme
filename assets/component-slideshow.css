@@ -145,6 +145,7 @@ slideshow-component .slideshow.banner {
   .slideshow__text.slideshow__text--right {
     align-items: flex-end;
     text-align: right;
+    padding: 5rem!important;
   }
 }
 
@@ -155,7 +156,7 @@ slideshow-component .slideshow.banner {
 @media screen and (min-width: 750px) {
   .slideshow__text-wrapper.banner__content {
     height: 100%;
-    padding: 5rem;
+    padding: 5rem!important;
   }
 }
 

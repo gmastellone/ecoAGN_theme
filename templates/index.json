@@ -132,9 +132,7 @@
         "collection_pcdMN3",
         "collection_9jzLxr"
       ],
-      "custom_css": [
-        "section {padding: o 35px !important;}"
-      ],
+      "custom_css": [],
       "settings": {
         "title": "",
         "heading_size": "h1",

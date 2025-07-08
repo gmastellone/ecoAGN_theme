@@ -179,16 +179,16 @@
             {%- if forloop.first -%}
               <img
                 srcset="
-                  {{ block.settings.image | image_url: width: 375, quality: 70 }} 375w,
-                  {{ block.settings.image | image_url: width: 750, quality: 70 }} 750w,
-                  {{ block.settings.image | image_url: width: 1100, quality: 70 }} 1100w,
-                  {{ block.settings.image | image_url: width: 1500, quality: 70 }} 1500w,
-                  {{ block.settings.image | image_url: width: 2000, quality: 70 }} 2000w,
-                  {{ block.settings.image | image_url: width: 3000, quality: 70 }} 3000w,
-                  {{ block.settings.image | image_url: width: 3840, quality: 70 }} 3840w
+                  {{ block.settings.image | image_url: width: 375 }} 375w,
+                  {{ block.settings.image | image_url: width: 750 }} 750w,
+                  {{ block.settings.image | image_url: width: 1100 }} 1100w,
+                  {{ block.settings.image | image_url: width: 1500 }} 1500w,
+                  {{ block.settings.image | image_url: width: 2000 }} 2000w,
+                  {{ block.settings.image | image_url: width: 3000 }} 3000w,
+                  {{ block.settings.image | image_url: width: 3840 }} 3840w
                 "
                 sizes="100vw"
-                src="{{ block.settings.image | image_url: width: 1500, quality: 70 }}"
+                src="{{ block.settings.image | image_url: width: 1500 }}"
                 width="{{ block.settings.image.width }}"
                 height="{{ height }}"
                 alt="{{ block.settings.image.alt | escape }}"
@@ -198,16 +198,16 @@
             {%- else -%}
               <img
                 srcset="
-                  {{ block.settings.image | image_url: width: 375, quality: 70 }} 375w,
-                  {{ block.settings.image | image_url: width: 750, quality: 70 }} 750w,
-                  {{ block.settings.image | image_url: width: 1100, quality: 70 }} 1100w,
-                  {{ block.settings.image | image_url: width: 1500, quality: 70 }} 1500w,
-                  {{ block.settings.image | image_url: width: 2000, quality: 70 }} 2000w,
-                  {{ block.settings.image | image_url: width: 3000, quality: 70 }} 3000w,
-                  {{ block.settings.image | image_url: width: 3840, quality: 70 }} 3840w
+                  {{ block.settings.image | image_url: width: 375 }} 375w,
+                  {{ block.settings.image | image_url: width: 750 }} 750w,
+                  {{ block.settings.image | image_url: width: 1100 }} 1100w,
+                  {{ block.settings.image | image_url: width: 1500 }} 1500w,
+                  {{ block.settings.image | image_url: width: 2000 }} 2000w,
+                  {{ block.settings.image | image_url: width: 3000 }} 3000w,
+                  {{ block.settings.image | image_url: width: 3840 }} 3840w
                 "
                 sizes="100vw"
-                src="{{ block.settings.image | image_url: width: 1500, quality: 70 }}"
+                src="{{ block.settings.image | image_url: width: 1500 }}"
                 width="{{ block.settings.image.width }}"
                 height="{{ height }}"
                 alt="{{ block.settings.image.alt | escape }}"

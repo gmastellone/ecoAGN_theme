@@ -86,6 +86,7 @@
                     {%- if collection.featured_image.width >= 1500 -%}{{ collection.featured_image | image_url: width: 1500, quality: 70 }} 1500w,{%- endif -%}
                     {{ collection.featured_image | image_url: quality: 70 }} {{ collection.featured_image.width }}w
                   "
+                  sizes="(max-width: 749px) 45vw, (min-width: 750px) 400px"
                   src="{{ collection.featured_image | image_url: width: 750, quality: 70 }}"
                   width="{{ collection.featured_image.width }}"
                   height="{{ collection.featured_image.height }}"

@@ -46,8 +46,8 @@
                         {%- if collection.image.width >= 1500 -%}{{ collection.image | image_url: width: 1500 }} 1500w,{%- endif -%}
                         {{ collection.image | image_url }} {{ collection.image.width }}w
                       "
+                      src="{{ collection.image | image_url: width: 1500 }}"
                       sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: section.settings.columns_desktop }}px, (min-width: 750px) calc((100vw - 130px) / {{ section.settings.columns_desktop }}), calc((100vw - 50px) / {{ section.settings.columns_mobile }})"
-                      src="{{ collection.image | image_url: width: 750 }}"
                       alt="{{ collection.image.alt | escape }}"
                       class="collection-grid__image{% if section.settings.image_ratio == 'portrait' %} collection-grid__image--portrait{% endif %}"
                       loading="lazy"

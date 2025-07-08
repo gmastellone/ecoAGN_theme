@@ -204,12 +204,7 @@
 /* Grid adjustments */
 
 
-@media screen and (min-width: 750px) {
-  .grid {
-    margin-left: -7rem !important;
-    margin-right: -7rem !important;
-  }
-}
+
 
 /* Card adjustments */
 .card {

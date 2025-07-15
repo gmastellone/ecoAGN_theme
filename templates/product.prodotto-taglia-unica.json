@@ -154,14 +154,14 @@
         "image-with-text-0": {
           "type": "heading",
           "settings": {
-            "heading": "Match'n Save – Get €10 Off Each Set!",
+            "heading": "Match'n Save – Get 10% Off Each Set!",
             "heading_size": "h1"
           }
         },
         "image-with-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Mix and match across all collections.</p><p>No limits, no rules – just €10 off <em>every</em> swimwear match you add to your cart.</p>",
+            "text": "<p>No limits, no rules – get <strong>10% off</strong> every swimwear match you add to your cart.<br/><br/>Buy a complete bikini set (at least one top and one bottom), and you'll unlock an <strong>exclusive discount</strong> on <strong>every accessory</strong> in our collection.</p>",
             "text_style": "body"
           }
         }
